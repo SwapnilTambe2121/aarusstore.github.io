@@ -1,0 +1,522 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+        font-family:     sans-serif;
+}
+
+
+
+
+
+
+header{
+    display: flex;
+    background-color:rebeccapurple;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    
+    padding: 2  0px 80px;
+    box-shadow: 0 5px 20px rgb(0, 0, 0);
+
+}
+#navbar{
+  
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   width: 100%;
+ 
+
+
+   
+
+}
+#navbar li{
+    list-style: none;
+    padding:0px 100px 0px 0px;
+    font-size: 16px;
+    position: relative;
+    
+    
+}
+#navbar li a{
+    color: rgb(19, 17, 17);
+    text-decoration: none;
+    font-weight: 600;
+
+
+}
+
+#navbar li a:hover,#navbar li a.active{
+    color: rgb(214, 131, 200);
+    
+    transition: 0.3s ease-in-out;
+    
+}
+
+.mobile{
+    display: none;
+    align-items: center;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+content:"";
+width:10%;
+height: 2px;
+position:absolute;
+bottom: -2px;
+left: 10px;
+background: rgb(244, 186, 234);
+
+}
+
+h1{
+    color: #5d2453;
+    font-size:80px;
+    font-weight: 500;
+}
+
+h2{
+    color:darkorange;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+h3{
+    color:darkslategrey;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+h4{
+    color:grey;
+    font-weight: 100;
+    font-size: 20px;
+}
+h6{
+    font-weight: 500;
+    font-size: 20px;
+    color: #5d2453;
+}
+
+
+.hero{
+    background-image: url("img/heroi.jpg");
+    height: 90vh;
+    background-position: top 10% right 0% ;
+    background-size: cover;
+    padding: 60px 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+.hero h4{
+    color: rgb(16, 93, 39);
+    font-weight: 500;
+}
+
+.hero button{
+    background-image:url("img/bb.png");
+    padding: 14px 80px 14px 80px;
+    background-color: transparent;
+    background-position: center;
+    color:rgb(7, 88, 59);
+    border: 0;
+    font-size: 15px;
+    font-weight: 600;
+    
+    background-repeat: no-repeat;
+    
+    cursor: pointer;
+    
+
+}
+
+.section-p1{
+    padding:40px 80px;
+}
+
+
+.featuerbox img{
+    width: 100%;
+    
+    margin-bottom: 10px;
+}
+.featuerbox {
+    width: 200px;
+
+    
+    padding:25px 15px;
+    text-align: center;
+    
+    box-shadow: 20px 20px 34px rgba(0, 0, 0,0.3);
+    border: 1px solid rgb(223, 204, 204);
+    border-radius: 5px;
+    margin:10px 0px;
+}
+
+.featuerbox:hover{
+    box-shadow:10px 10px 54px rgba(0, 0,0, 0.3);
+}
+
+.featuerbox h6{
+    background-color:rgba(239, 178, 54, 0.581);
+    padding:5px 8px 5px 8px;
+    margin:10px 0px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: Tahoma;
+    color: rgb(9, 83, 9);
+
+}
+
+#feature .featuerbox:nth-child(2) h6{
+    background-color: rgba(229, 123, 192, 0.705);
+}
+#feature .featuerbox:nth-child(3) h6{
+    background-color: rgba(153, 229, 123, 0.705);
+}
+
+#feature .featuerbox:nth-child(4) h6{
+    background-color: rgba(247, 81, 59, 0.705);
+}
+
+#feature .featuerbox:nth-child(5) h6{
+    background-color: rgba(74, 224, 251, 0.607);
+}
+#feature .featuerbox:nth-child(6) h6{
+    background-color: rgba(223, 242, 103, 0.705);
+}
+#feature{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+}
+
+#product_section{
+    text-align:center;
+
+}
+#product_section .product{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border:1px solid rgb(219, 206, 206);
+    border-radius: 25px;
+    box-shadow: 20px 30px 35px rgba(76, 73, 73, 0.3);
+    margin: 15px 0px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+}
+
+#product_section .product:hover{
+    box-shadow: 20px 30px 35px rgba(76, 73, 73, 0.6);
+
+}
+
+ 
+#product_section img{
+
+    width: 100%;
+    max-height: 300px;
+    border-radius: 25px;
+}
+
+#product_section .star{
+    color: yellow;
+    margin: 2px 0px;
+}
+
+#product_section .dis{
+    text-align:start
+    
+}
+#product_section .dis h4{
+    margin: 4px 0px;
+    color: rgb(20, 80, 72);
+    
+
+}
+#product_section span{
+    color: rgb(113, 113, 102);
+
+
+}
+#product_section .cart{
+    color: rgb(2, 76, 84);
+    background-color: rgb(211, 237, 228);
+    border: solid 1px rgb(138, 198, 222);
+    height: 40x;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    
+    bottom: 10px;
+    right: 15px;
+
+
+    
+}
+#product_section .prod_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top:  20px;
+}
+
+#shopnow .banner{
+    background-image: url("img/baner.jpeg");
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    
+    
+}
+
+
+#shopnow .banner h2{
+    color:white;
+    font-weight: 400;
+   
+}
+#shopnow .banner h4{
+    color:white;
+    font-weight: 300;
+    
+}
+
+#shopnow .banner span{
+    color:red;
+    font-weight: 300;
+
+}
+.margin-m1{
+    margin: 20px 0px;
+}
+#shopnow .banner button{
+    color:rgb(14, 79, 121);
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    
+    border-radius: 4px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    font-weight: 400;
+}
+#shopnow .banner button:hover{
+    color:white;
+    background-color: rgb(64, 148, 169);
+    font-size: 20px;
+    padding: 10px;
+    
+
+
+    font-weight: 400;
+}
+#banner{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+#banner .banner-box{
+    min-width: 580px;
+    height: 50vh;
+    background-image: url("img/smbanner2.jpeg");
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+
+
+}
+#banner .banner-box2{
+   
+    background-image: url("img/download.jpg");
+   
+    
+
+
+}
+#banner h2{
+    color: orangered;
+    font-size: 30px;
+    font-weight: 800;
+}
+#banner h4{
+    color: rgb(91, 68, 60);
+    font-size: 26px;
+    font-weight: 600;
+    padding-right: 50px;
+}
+#banner span{
+    color: rgb(15, 120, 155);
+  
+    font-weight: 600;
+}
+
+#banner button{
+    color: rgb(5, 74, 109);
+    background-color: transparent;
+    border: 1px rgb(27, 87, 183) solid;
+    padding: 10px 14px;
+    margin-right: 50px;
+    font-weight: 600;
+
+}
+#banner .banner-box:hover button{
+    color: rgb(255, 255, 255);
+    background-color: rgba(27, 87, 183,0.7);
+    border: 1px rgb(11, 4, 4) solid;
+  
+    padding: 10px 14px;
+    margin-right: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3ms ease-in;
+
+}
+#close{
+    display: none;
+}
+body{
+
+    width:100%;
+}
+
+/* first media query */
+
+ 
+@media (max-width:799px){
+    .section-p1{
+        padding: 40px 40px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+       position: fixed;
+        box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.886);
+       
+        right: -300px;
+        top: 0;
+       height: 100vh;
+       width: 250px;
+       background-color: rgb(237, 202, 246);
+       padding: 80px 0px 0px 10px;
+       transition: 0.3s;
+       
+    }
+    
+    #navbar li{
+        margin-bottom: 35px;
+        margin-left: 20px;
+    }
+    .mobile{
+        display: flex;
+        align-items: center;
+        color:black;
+    }
+    .mobile i{
+        color: black;
+        padding-left: 20px;
+        font-size: 24px;
+        padding-right: 24px;
+    }
+    #navbar.ac{
+        right: 0px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        font-size: 24px;
+        color: black;
+    }
+    .hero {
+        background-image: url("img/heroi.jpg");
+        height: 60vh;
+        background-position:top 30% right 50%;
+        padding: 0 20px; 
+        
+       
+       
+    }
+    
+.hero h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.banner h2{
+    font-size: 35px;
+    text-align: center;
+}
+#shopnow .banner button {
+    color: rgb(14, 79, 121);
+    background-color: white;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    font-weight: 400;
+}
+#shopnow .banner{
+    height: 40vh;
+}
+#product_section .prod_container{
+    
+    justify-content: center;
+    
+}
+#product_section .product {
+    
+    margin:10px;
+    
+}
+#banner .banner-box {
+    min-width: 580px;
+    height: 40vh;
+    background-image: url("img/smbanner2.jpeg");
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    background-size: cover;
+background-position: top 10% right 0%;
+    padding: 10px;
+}
+
+#banner .banner-box2 {
+    
+    height: 40vh;
+    /* background-image: url("img/smbanner2.jpeg"); */
+    
+        background-image: url("img/download.jpg");
+   
+    padding: 10px;
+}
+}
